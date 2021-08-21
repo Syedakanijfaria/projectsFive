@@ -1,3 +1,15 @@
+function updateTotal() {
+    console.log(memoryPrice.innerText, storagePrice.innerText, shippingPrice.innerText);
+    const shipping = Number(shippingPrice.innerText);
+    const storage = Number(storagePrice.innerText);
+    const memory = Number(memoryPrice.innerText);
+    const grandTotal = 1299 + memory + storage + shipping;
+    document.getElementById("totalPrice").innerText = grandTotal;
+    const discount = (grandTotal * 20) / 100;
+    document.getElementById("discount").innerText = discount;
+    const discountPrice = grandTotal - discount;
+    document.getElementById("discountPrice").innerText = discountPrice;
+}
 const btn1 = document.getElementById("memory1");
 btn1.addEventListener("click", function () {
     memoryPrice.innerText = "0";
@@ -37,15 +49,3 @@ btn7.addEventListener("click", function () {
 //const bestPrice = document.getElementById("bestPrice");
 //const best = Number(bestPrice.value);
 // update total
-function updateTotal() {
-    console.log(memoryPrice.innerText, storagePrice.innerText, shippingPrice.innerText);
-    const shipping = Number(shippingPrice.innerText);
-    const storage = Number(storagePrice.innerText);
-    const memory = Number(memoryPrice.innerText);
-    const grandTotal = 1299 + memory + storage + shipping;
-    document.getElementById("totalPrice").innerText = grandTotal;
-    const discount = grandTotal / 20;
-    document.getElementById("totalPrice").innerText = discount;
-
-    //const discountPrice = ;
-}
