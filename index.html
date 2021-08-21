@@ -5,12 +5,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mac Book Pro</title>
+    <!-- tailwind css style -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- css style -->
     <link rel="stylesheet" href="style.css">
+    <!-- font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <h1>hellloooooooooooo</h1>
+    <main>
+        <div class="container mx-auto p-8 ">
+            <div class="grid grid-cols-2">
+                <!-------------------product image--------------->
+                <div class="px-8">
+                    <img src="mac.png" alt="" class="w-9/12">
+                </div>
+                <!-----------------product description and prices---------------->
+                <div class="text-base w-full">
+                    <div class="mb-8">
+                        <h1 class="text-4xl mb-3">Customize your Blue 24-inch iMac with Appple M1 chip.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad placeat doloremque dolores. Ullam
+                            laborum debitis laboriosam ducimus mollitia iste natus atque expedita dolores, commodi
+                            repellendus officia aut quam assumenda fugiat.</p>
+                    </div>
+                    <!-- buttonsss -->
+                    <div class="mb-8">
+                        <p class="font-bold">Memory</p>
+                        <button id="memory1"
+                            class="border border-black p-2 rounded hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-800 focus:border-transparent">
+                            8GB unfield memory
+                        </button>
+                        <button id="memory2"
+                            class="border border-black p-2 rounded hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-800 focus:border-transparent">
+                            16GB unfield memory
+                        </button>
+                    </div>
+                    <div class="mb-8">
+                        <p class="font-bold">Storage</p>
+                        <button id="storage1"
+                            class="border border-black p-2 rounded hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-800 focus:border-transparent">
+                            256GB SSD storage
+                        </button>
+                        <button id="storage2"
+                            class="border border-black p-2 rounded hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-800 focus:border-transparent">
+                            512GB SSD storage
+                        </button>
+                        <button id="storage3"
+                            class="border border-black p-2 rounded hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-800 focus:border-transparent">
+                            1TB SSD storage
+                        </button>
+                    </div>
+
+                    <div class="mb-8">
+                        <p class="font-bold">Choose your delivery option</p>
+                        <button id="shipping1"
+                            class="border border-black p-2 rounded hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-800 focus:border-transparent">
+                            Friday, Aug 25 FREE Primary Delivery
+                        </button>
+                        <button id="shipping2"
+                            class="border border-black p-2 rounded hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-800 focus:border-transparent">
+                            Friday, Aug 21 Delivery Charge $20
+                        </button>
+                    </div>
+                    <div class="">Best Price: $<span id="bestPrice">1299</span></div>
+                    <hr />
+                    <div class="">Extra Memory Cost: $<span id="memoryPrice">0</span></div>
+                    <hr />
+                    <div class="">Extra Storage Cost: $<span id="storagePrice">0</span></div>
+                    <hr />
+                    <div class="">Delivery Charge: $<span id="shippingPrice">0</span></div>
+                    <hr />
+                    <div class="">Total Price: $<span id="totalPrice">1299</span></div>
+                    <hr />
+                    <div class="">Discount: %<span id="discount">20</span></div>
+                    <hr />
+                    <div class="">Discount Price: $<span id="discountPrice">1299</span></div>
+                </div>
+            </div>
+        </div>
+    </main>
 
 
 
