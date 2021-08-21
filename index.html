@@ -6,15 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mac Book Pro</title>
-    <!-- tailwind css style -->
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <!-- css style -->
-    <link rel="stylesheet" href="style.css">
     <!-- font style -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
+    <!-- css style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- tailwind css style -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -72,33 +71,30 @@
                             Friday, Aug 21 Delivery Charge $20
                         </button>
                     </div>
-                    <div class="">Best Price: $<span id="bestPrice">1299</span></div>
+                    <div class="price-list">Best Price: $<span id="bestPrice">1299</span></div>
                     <hr />
-                    <div class="">Extra Memory Cost: $<span id="memoryPrice">0</span></div>
+                    <div class="price-list">Extra Memory Cost: $<span id="memoryPrice">0</span></div>
                     <hr />
-                    <div class="">Extra Storage Cost: $<span id="storagePrice">0</span></div>
+                    <div class="price-list">Extra Storage Cost: $<span id="storagePrice">0</span></div>
                     <hr />
-                    <div class="">Delivery Charge: $<span id="shippingPrice">0</span></div>
+                    <div class="price-list">Delivery Charge: $<span id="shippingPrice">0</span></div>
                     <hr />
-                    <div class="">Total Price: $<span id="totalPrice">1299</span></div>
+                    <div class="price-list mb-4">Total Price: $<span id="totalPrice">1299</span></div>
                 </div>
             </div>
             <div class="text-center">
                 <hr />
-                <div class="">Add promo code<br>
+                <div class="price-list mt-4">Add promo code<br>
                     <input id="discount" class="border border-black p-2 rounded " type="text">
                     <button id="apply-btn"
                         class="bg-gradient-to-r from-green-400 to-blue-500 p-2 rounded focus:outline-none focus:ring-2 focus:ring-gray-800 focus:border-transparent">
                         Apply
                     </button>
                 </div>
-                <div class="">TOTAL: $<span id="discountPrice">1299</span></div>
+                <div class="price-list">TOTAL: $<span id="discountPrice">1299</span></div>
             </div>
         </div>
     </main>
-
-
-
 
     <script src="index.js"></script>
 </body>

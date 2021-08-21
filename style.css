@@ -1,4 +1,7 @@
-
 body{
     font-family: 'Poppins', sans-serif;
+}
+.price-list{
+    font-weight: bold;
+    padding: 2px;
 }
