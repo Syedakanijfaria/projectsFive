@@ -5,11 +5,26 @@ function updateTotal() {
     const memory = Number(memoryPrice.innerText);
     const grandTotal = 1299 + memory + storage + shipping;
     document.getElementById("totalPrice").innerText = grandTotal;
-    const discount = (grandTotal * 20) / 100;
-    document.getElementById("discount").innerText = discount;
-    const discountPrice = grandTotal - discount;
-    document.getElementById("discountPrice").innerText = discountPrice;
+    // const discount = (grandTotal * 20) / 100;
+    // document.getElementById("discount").innerText = discount;
+    // const discountPrice = grandTotal - discount;
+    document.getElementById("discountPrice").innerText = grandTotal;
 }
+const applyBtn = document.getElementById("apply-btn");
+applyBtn.addEventListener("click", function () {
+    const discountPromo = document.getElementById("discount").value
+    console.log(discountPromo);
+
+    if (discountPromo == "stevekaku") {
+        updateTotal()
+        discountPromo = (grandTotal * 20) / 100;
+        const discountPrice = grandTotal - discountPromo;
+        document.getElementById("discountPrice").innerText = discountPrice;
+    }
+    else {
+        console.log("incorrect")
+    }
+});
 const btn1 = document.getElementById("memory1");
 btn1.addEventListener("click", function () {
     memoryPrice.innerText = "0";
